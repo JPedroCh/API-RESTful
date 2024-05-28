@@ -6,4 +6,9 @@ export interface Repository {
     descricao: string
   }): Promise<Noticia | undefined>
   listAll(): Promise<Noticia | undefined>
+  updateOne(params: {
+    newsId: string
+    title: string
+    description: string
+  }): Promise<Noticia | undefined> 
 }

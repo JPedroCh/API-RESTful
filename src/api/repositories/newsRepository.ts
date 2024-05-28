@@ -29,6 +29,11 @@ class NewsRepository implements Repository {
     const news = await this.newsRepository.find({})
     return news
   }
+
+  async updateOne(newsData: any): Promise<Noticia | undefined> {
+    const result = await this.newsRepository.save(newsData)
+    return result
+  }
 }
 
 export default NewsRepository
