@@ -34,6 +34,12 @@ class NewsRepository implements Repository {
     const result = await this.newsRepository.save(newsData)
     return result
   }
+
+  async deleteOne(params: { id: number}): Promise<any> {
+    const { id } = params
+    const result = await this.newsRepository.delete(id)
+    return result
+  }
 }
 
 export default NewsRepository

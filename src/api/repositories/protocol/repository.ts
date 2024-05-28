@@ -7,8 +7,11 @@ export interface Repository {
   }): Promise<Noticia | undefined>
   listAll(): Promise<Noticia | undefined>
   updateOne(params: {
-    newsId: string
+    id: number
     title: string
     description: string
   }): Promise<Noticia | undefined> 
+  deleteOne(params: {
+    id: number
+  }): Promise<Noticia | undefined>
 }

@@ -3,7 +3,7 @@ import { Service, ServiceResponse } from "./type"
 
 
 export interface UpdateNewsData {
-  newsId: string
+  id: number
   title: string
   description: string
 }
