@@ -17,12 +17,12 @@ class NewsRepository implements Repository {
       descricao
     } = params
 
-    const user = this.newsRepository.create({
+    const news = this.newsRepository.create({
       titulo,
       descricao
     })
-    await this.newsRepository.save(user)
-    return user
+    await this.newsRepository.save(news)
+    return news
   }
 }
 
