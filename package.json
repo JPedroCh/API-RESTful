@@ -20,6 +20,7 @@
   "homepage": "https://github.com/JPedroCh/API-RESTful#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "nodemon": "^3.1.1",
     "pg": "^8.11.5",
