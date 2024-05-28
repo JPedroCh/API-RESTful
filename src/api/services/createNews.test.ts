@@ -10,6 +10,7 @@ describe('CreateNewsService', () => {
       createNews: jest.fn(),
       listAll: jest.fn(),
       updateOne: jest.fn(),
+      deleteOne: jest.fn()
     } as jest.Mocked<Repository>;
     createNewsService = new CreateNewsService(mockRepository);
   });
