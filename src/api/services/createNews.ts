@@ -1,5 +1,5 @@
 import { Repository } from "../repositories/protocol/repository"
-import { Service, ServiceReponse } from "./type"
+import { Service, ServiceResponse } from "./type"
 
 
 export interface CreateNewsData {
@@ -38,7 +38,7 @@ export class CreateNewsService
 
   async execute(
     createNewsData: CreateNewsData
-  ): Promise<ServiceReponse<{ title: string; description: string }>> {
+  ): Promise<ServiceResponse<{ title: string; description: string }>> {
 
 
     if (!createNewsData.titulo) {

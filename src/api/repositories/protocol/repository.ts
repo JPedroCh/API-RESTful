@@ -5,4 +5,5 @@ export interface Repository {
     titulo: string
     descricao: string
   }): Promise<Noticia | undefined>
+  listAll(): Promise<Noticia | undefined>
 }
