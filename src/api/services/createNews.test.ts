@@ -7,7 +7,8 @@ describe('CreateNewsService', () => {
 
   beforeEach(() => {
     mockRepository = {
-      createNews: jest.fn()
+      createNews: jest.fn(),
+      listAll: jest.fn(),
     } as jest.Mocked<Repository>;
     createNewsService = new CreateNewsService(mockRepository);
   });
