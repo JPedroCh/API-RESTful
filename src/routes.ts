@@ -10,6 +10,6 @@ const routes = Router()
 routes.post('/create', adaptExpressRoute(makeCreateNewsController()))
 routes.get('/list', adaptExpressRoute(makeListNewsController()))
 routes.put('/update', adaptExpressRoute(makeUpdateNewsController()))
-routes.put('/delete', adaptExpressRoute(makeDeleteNewsController()))
+routes.delete('/delete', adaptExpressRoute(makeDeleteNewsController()))
 
 export default routes;
